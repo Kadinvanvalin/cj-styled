@@ -1,19 +1,36 @@
-# Getting Started with Create React App
+# Getting Started Styled Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn add styled-components`
+### `npm install styled-components`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
+## Tagged templates
+You can call functions with templates. Styled components takes advantage of this syntax
+```jsx
+
+
+ let person = 'Mike';
+ let age = 28;
+
+function pooWrap(strings, ...values) {
+    let str = '';
+    strings.forEach((string, i) => {
+        str += `${string}  ${values[i] ?  "💩" + values[i] + "💩"  : ''}`;
+    });
+    return str;
+}
+
+
+  
+```
+
+### styled by props instead of classname
+### encapsulated styles
+### Styled themes
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
